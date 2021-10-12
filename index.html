@@ -16,21 +16,21 @@
 
   <header class="header">
     <div class="header-div">
-      <nav>
-        <ul class="navigation">
+      <nav class="nav">
+        <ul class="ul">
           <a href="#">
             <li class="nav-list">Wines</li>
           </a>
           <a href="#">
             <li class="nav-list">Our Mission</li>
           </a>
-          <a href="#">
+          <a href="#section1">
             <li class="nav-list"><img class="logo" src="img/pngegg.png" alt="logo"></li>
           </a>
-          <a href="#">
+          <a href="#section2">
             <li class="nav-list">Wine Blog</li>
           </a>
-          <a href="#">
+          <a href="section3">
             <li class="nav-list">Contact Us</li>
           </a>
         </ul>
@@ -40,35 +40,49 @@
       </nav>
     </div>
 
-    
-    <section>
-      <div class="container">
+    <section id="section1">
+      <div class="container1">
         <div class="h1">
-          <h1>Quality Wine from Organically Grown Grapes</h1>
+          <h1 class="h1text">Quality Wine from Organically Grown Grapes</h1>
         </div>
         <div class="left-content">
-          <h3 class="explora">EXPERIENCE</h3>
+          <div class="vineyard-text">
+          <h3 class="explora">Experience</h3>
           <h2 class="birthstone">The Story Behind</h2>
           <h2 class="birthstone">Our Winery</h2>
+
+          <div class="your-class">
+            <div>your content</div>
+            <div>your content</div>
+            <div>your content</div>
+          </div>
+              
+        </div>
+          <div class="vineyard-img">
           <img class="vineyard" src="img/vineyard.jpg" alt="vineyard">
+        </div>
         </div>
 
         <div class="right">
           <img src="" alt="">
-          <p>Guided walking Tour through the Vineyards in the Valley of Gods and the Menegolli Wineries. Book your tour
+          <p class="page1-p">Guided walking Tour through the Vineyards in the Valley of Gods and the Menegolli Wineries. Book your tour
             in advance (minimum 7 adults) which will take place in Valpantena – VERONA.</p>
         </div>
       </div>
 
     </section>
-    <section>
+    <section id="section2">
       <div class="background1">
-        <img src="img/Group 193.png" alt="">
+        <div class="container3">
+        <img class="wine1" src="img/bottle3.jpg" alt="wines">
+        <img class="wine2" src="img/bottle32.jpg" alt="wines">
+        </div>
       </div>
     </section>
 
-    <section>
-      <div class="container">
+    <section id="section3">
+      <div class="container2">
+        <div class="blog">
         <div class="block">
           <i class="far fa-bell"></i>
           <p class="div-text1">LATEST Articles</p>
@@ -99,18 +113,45 @@
           </div>
         </div>
     </section>
+
+    <section>
+      <div class="container4">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47475.97241850706!2d45.837696!3d41.952002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4045db6446bf4a71%3A0x4e98ff012a347404!2sShilda%20Winery%20and%20Restaurant!5e0!3m2!1ska!2sge!4v1634021242415!5m2!1ska!2sge" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="form">
+          <form action="#">
+            <label class="title" for="Name"></label>
+            <input class="input" type="text" id="name" name="Name" placeholder="Name">
+            <label class="title" for="email"></label>
+            <input class="input" type="text" id="email" name="E-mail" placeholder="Email">
+            <label class="title" for="subject"></label>
+            <input class="input" type="text" id="subject" name="Subject" placeholder="Subject">
+            <label class="title" for="message"></label>
+            <textarea class="input2" type="text" id="textarea" name="text" placeholder="Description"></textarea>
+            <div class="submit">
+            <button class="button" type="submit">
+              Send
+              <i class="far fa-paper-plane"></i>
+            </button>
+            </div>
+        </form>
+        </div>
+      </div>
+    </section>
 </body>
 
 <footer>
   <div class="footer">
     <div class="footer-main">
       <div class="footer1">
-        <p class="footer-title">Zetta Hotels</p>
-        <p class="footer-text">Our hotel is an image of quality and profesionalism combined with hard work and
+        
+          <img class="kailogo" src="img/logo.png" alt="logo">
+      
+        <p class="footer-title">Kai Winery</p>
+        <p class="footer-text">Our winery is an image of quality and profesionalism combined with hard work and
           precision. You can expect only the best services from our staff.</p>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+          
       </div>
       <div class="footer2">
         <p class="footer-text">Useful links</p>
@@ -128,12 +169,19 @@
       </div>
       <div class="footer4">
         <p class="footer-text">Contact Info</p>
-        <img src="img/mail.svg" alt="">
+        <img class="mail" src="img/mail.svg" alt="mail">
         <p class="footer-text">example@yahoo.com</p>
-        <img src="img/phone.svg" alt="">
+        <img src="img/phone.svg" alt="phone">
         <p class="footer-text">+0 320 422 4254</p>
-        <img src="img/pin.svg" alt="">
+        <img src="img/pin.svg" alt="pin">
         <p class="footer-text">Main Str Chicago Ilinois</p>
+        <img src="img/fb.png" alt="fb">
+        <img src="img/tw.png" alt="tw">
+        <img src="img/gg.png" alt="gg">
+      </div>
+      <div class="fot-1-div5">
+        <p class="footer-text">Copyright ©2021 All rights reserved | By G110</p>
+    </div>    
       </div>
     </div>
 </footer>

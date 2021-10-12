@@ -1,30 +1,28 @@
 .body {
   background: linear-gradient(RGB(223, 207, 190), rgba(195, 196, 192, 0.925));
-    /* background-image: url(../img/glass.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-    padding-top: 30px;
-    /* backdrop-filter: blur(30px); */
+    
 }
 
-.background1 {
-  background-image: url(../img/glass.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+/* navigation */
+.nav {
+  margin-top: 20px;
 }
 
-.navigation {
+.ul {
     display: flex;
+    height: 60px;
+    
 }
 
 .header-div {
     display: flex;
-    margin: 0px auto;
+    margin: 0 auto;
     max-width: 1700px;
     width: 100%;
     justify-content: space-around;
-    
+    position: fixed;
+    background-color: burlywood;
+    opacity: 0.9;
 }
 
 .nav-list {
@@ -42,40 +40,95 @@
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     transform: translate(0%,-40%);
+    overflow: hidden;
+}
+
+/* 1st part */
+
+.container1 {
+  background-image: url(../img/kaxeti-blur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px;
+  
+}
+
+.section1 {
+overflow-y: scroll;
+scroll-behavior: smooth;
+scroll-snap-type: y mandatory;
+}
+
+.section2 {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.section3 {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.logokai {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.kailogo {
+  width: 270px;
+  height: auto;
 }
 
 .h1 {
     display: flex;
-    margin: 0 auto;
+    margin: 80px auto;
+    margin-bottom: 30px;
     max-width: 500px;
     width: 100%;
     color: #fff;
-    font-size: 40px;
+    font-size: 25px;
+    font-family: 'Explora', cursive;
 }
 
+.h1text{
+  font-family: 'Playfair Display', serif;
+  
+}
 
 .explora {
-  
   font-family: 'Birthstone', cursive;
   color: #fff;
-  font-size: 18px;
+  font-size: 25px;
+  margin-right: 10px;
+  margin-bottom: 3px;
 }
 
 .birthstone {
   font-family: 'Explora', cursive;
   color: #fff;
   font-size: 20px;
+  margin-right: 10px;
+  
 }
 
 .left-content {
     display: flex;
-    direction
     margin: 0 auto;
     max-width: 1700px;
     width: 100%;
+}
+
+.page1-p {
+  color: #fff;
 }
 
 .vineyard {
@@ -85,17 +138,50 @@
     
 }
 
-.container {
-  background-image: url(../img/kaxeti-blur.jpg);
+
+/* section2 */
+.background1 {
+  background-image: url(../img/glass.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* max-width: 1170px;
-  width: 100%; */
-  margin: 67px auto;
+  height: 100vh;
+}
+
+.wine1 {
+  height: 300px;
+  width: auto;
+}
+.wine2 {
+  height: 300px;
+  width: auto;
+}
+.container3 {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/* section 3 */
+.container2 {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  
+  height: 100vh;
+}
+
+.blog {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  justify-content: center;
+  padding-top: 40px;
 }
 
 .block {
@@ -118,7 +204,7 @@
 
   .div-text1 {
     font-size: 22px;
-    color: gray;
+    color: #fff;
     margin-bottom: 13px;
   }
   
@@ -132,7 +218,7 @@
   .div-text3 {
     font-size: 16px;
     width: 328px;
-    color: gray;
+    color: #fff;
     margin-bottom: 30px;
   }
 
@@ -179,7 +265,87 @@
       margin-bottom: 30px;
   }
 
+  .html {
+    scroll-behavior: smooth;
+  }
 
+
+  /* contact */
+ .container4 {
+  background-image: url(../img/bgkai.png);
+  max-width: 1500px;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 45px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  
+ }
+
+ .map {
+  max-width: 450px;
+  width: 100%;
+  
+ }
+
+ .form {
+  max-width: 352px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+ }
+ 
+ .input2 {
+  max-width: 350px;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  background-color: #F8F8F8;
+  padding: 15px; 
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+
+.input {
+  max-width: 350px;
+  width: 100%;
+  height: 60px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  background-color: #F8F8F8;
+  padding-left: 15px;
+}
+
+.button {
+    max-width: 350px;
+    width: 100%;
+    height: 60px;
+    background-color: #5863F8;
+    color: #F2F2F2;
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button:hover {
+  background-color: #473966;
+  
+}
+
+.far {
+  margin-left: 10px;
+  margin-top: 28px;
+  font-size: 13px;
+
+}
 
 
   /* footer */
@@ -187,20 +353,27 @@
     width: 100%;
     background-color: black;
     display: flex;
-  
   }
   
   .footer-main {
     max-width: 1600px;
     width: 100%;
-    margin: 100px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 30px;
   }
-  
+
+  .kailogo {
+    display: flex;
+    margin: 0;
+    width: 250px;
+    height: auto;
+  }
+
   .footer-text {
     color: #F2F2F2;
-    
+    display: flex;
   }
   
   .footer-title {
@@ -230,5 +403,15 @@
   }
   
   .footer4 {
-    width: 150px;
+    width: 200px;
+    
   }
+
+  .mail {
+    display: flex;
+  }
+
+
+
+
+
