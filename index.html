@@ -8,7 +8,12 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="https://kit.fontawesome.com/1a849f7e50.js" crossorigin="anonymous"></script>
+  <script src="./js/animate.js"></script>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <title>Winery</title>
 </head>
 
@@ -18,19 +23,19 @@
     <div class="header-div">
       <nav class="nav">
         <ul class="ul">
-          <a href="#">
+          <a onclick="scrol(3)">
             <li class="nav-list">Wines</li>
           </a>
-          <a href="#">
+          <a onclick="scrol(1)">
             <li class="nav-list">Our Mission</li>
           </a>
-          <a href="#section1">
+          <a onclick="scrol(0)">
             <li class="nav-list"><img class="logo" src="img/pngegg.png" alt="logo"></li>
           </a>
-          <a href="#section2">
+          <a onclick="scrol(2)">
             <li class="nav-list">Wine Blog</li>
           </a>
-          <a href="section3">
+          <a onclick="scrol(4)">
             <li class="nav-list">Contact Us</li>
           </a>
         </ul>
@@ -47,25 +52,26 @@
         </div>
         <div class="left-content">
           <div class="vineyard-text">
-          <h3 class="explora">Experience</h3>
-          <h2 class="birthstone">The Story Behind</h2>
-          <h2 class="birthstone">Our Winery</h2>
+            <h3 class="explora">Experience</h3>
+            <h2 class="birthstone">The Story Behind</h2>
+            <h2 class="birthstone">Our Winery</h2>
 
-          <div class="your-class">
-            <div>your content</div>
-            <div>your content</div>
-            <div>your content</div>
+            <div class="your-class">
+              <div>your content1</div>
+              <div>your content2</div>
+              <div>your content3</div>
+            </div>
+
           </div>
-              
-        </div>
           <div class="vineyard-img">
-          <img class="vineyard" src="img/vineyard.jpg" alt="vineyard">
-        </div>
+            <img class="vineyard" src="img/vineyard.jpg" alt="vineyard">
+          </div>
         </div>
 
         <div class="right">
           <img src="" alt="">
-          <p class="page1-p">Guided walking Tour through the Vineyards in the Valley of Gods and the Menegolli Wineries. Book your tour
+          <p class="page1-p">Guided walking Tour through the Vineyards in the Valley of Gods and the Menegolli Wineries.
+            Book your tour
             in advance (minimum 7 adults) which will take place in Valpantena – VERONA.</p>
         </div>
       </div>
@@ -74,8 +80,8 @@
     <section id="section2">
       <div class="background1">
         <div class="container3">
-        <img class="wine1" src="img/bottle3.jpg" alt="wines">
-        <img class="wine2" src="img/bottle32.jpg" alt="wines">
+          <img class="wine1" src="img/bottle3.jpg" alt="wines">
+          <img class="wine2" src="img/bottle32.jpg" alt="wines">
         </div>
       </div>
     </section>
@@ -83,41 +89,45 @@
     <section id="section3">
       <div class="container2">
         <div class="blog">
-        <div class="block">
-          <i class="far fa-bell"></i>
-          <p class="div-text1">LATEST Articles</p>
-          <p class="div-text2">Best Wine Makers in Georgia 2021</p>
-          <p class="div-text3">Solutions for Smart Home & Businesses</p>
-          <div class="read">
-            <p>Read More</p>
+          <div class="block">
+            <i class="far fa-bell"></i>
+            <p class="div-text1">LATEST Articles</p>
+            <p class="div-text2">Best Wine Makers in Georgia 2021</p>
+            <p class="div-text3">Solutions for Smart Home & Businesses</p>
+            <div class="read">
+              <p>Read More</p>
+            </div>
           </div>
-        </div>
-        <div class="block">
-          <img class="image" src="img/health-benefits.jpg" alt="2" />
-          <p class="div-text1">Health Benefits of White Wine</p>
-          <p class="div-text2">June 10, 2021</p>
-          <p class="div-text3">Winemaking or vinification is the production of wine, starting with the selection of the
-            fruit, its fermentation into alcohol, and the bottling of the finished</p>
-          <div class="read">
-            <p>Read More</p>
+          <div class="block">
+            <img class="image" src="img/health-benefits.jpg" alt="2" />
+            <p class="div-text1">Health Benefits of White Wine</p>
+            <p class="div-text2">June 10, 2021</p>
+            <p class="div-text3">Winemaking or vinification is the production of wine, starting with the selection of
+              the
+              fruit, its fermentation into alcohol, and the bottling of the finished</p>
+            <div class="read">
+              <p>Read More</p>
+            </div>
           </div>
-        </div>
-        <div class="block">
-          <img class="image" src="img/awards.jpg" alt="3" />
-          <p class="div-text1">Annual Wine Awards 2021</p>
-          <p class="div-text2">June 10, 2021</p>
-          <p class="div-text3">Winemaking or vinification is the production of wine, starting with the selection of the
-            fruit, its fermentation into alcohol, and the bottling of the finished</p>
-          <div class="read">
-            <p>Read More</p>
+          <div class="block">
+            <img class="image" src="img/awards.jpg" alt="3" />
+            <p class="div-text1">Annual Wine Awards 2021</p>
+            <p class="div-text2">June 10, 2021</p>
+            <p class="div-text3">Winemaking or vinification is the production of wine, starting with the selection of
+              the
+              fruit, its fermentation into alcohol, and the bottling of the finished</p>
+            <div class="read">
+              <p>Read More</p>
+            </div>
           </div>
-        </div>
     </section>
 
     <section>
       <div class="container4">
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47475.97241850706!2d45.837696!3d41.952002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4045db6446bf4a71%3A0x4e98ff012a347404!2sShilda%20Winery%20and%20Restaurant!5e0!3m2!1ska!2sge!4v1634021242415!5m2!1ska!2sge" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47475.97241850706!2d45.837696!3d41.952002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4045db6446bf4a71%3A0x4e98ff012a347404!2sShilda%20Winery%20and%20Restaurant!5e0!3m2!1ska!2sge!4v1634021242415!5m2!1ska!2sge"
+            width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="form">
           <form action="#">
@@ -130,12 +140,12 @@
             <label class="title" for="message"></label>
             <textarea class="input2" type="text" id="textarea" name="text" placeholder="Description"></textarea>
             <div class="submit">
-            <button class="button" type="submit">
-              Send
-              <i class="far fa-paper-plane"></i>
-            </button>
+              <button class="button" type="submit">
+                Send
+                <i class="far fa-paper-plane"></i>
+              </button>
             </div>
-        </form>
+          </form>
         </div>
       </div>
     </section>
@@ -145,13 +155,13 @@
   <div class="footer">
     <div class="footer-main">
       <div class="footer1">
-        
-          <img class="kailogo" src="img/logo.png" alt="logo">
-      
+
+        <img class="kailogo" src="img/logo.png" alt="logo">
+
         <p class="footer-title">Kai Winery</p>
         <p class="footer-text">Our winery is an image of quality and profesionalism combined with hard work and
           precision. You can expect only the best services from our staff.</p>
-          
+
       </div>
       <div class="footer2">
         <p class="footer-text">Useful links</p>
@@ -181,9 +191,9 @@
       </div>
       <div class="fot-1-div5">
         <p class="footer-text">Copyright ©2021 All rights reserved | By G110</p>
-    </div>    
       </div>
     </div>
+  </div>
 </footer>
 
 </html>

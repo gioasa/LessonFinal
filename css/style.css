@@ -1,6 +1,6 @@
 .body {
   background: linear-gradient(RGB(223, 207, 190), rgba(195, 196, 192, 0.925));
-    
+  
 }
 
 /* navigation */
@@ -17,7 +17,6 @@
 .header-div {
     display: flex;
     margin: 0 auto;
-    max-width: 1700px;
     width: 100%;
     justify-content: space-around;
     position: fixed;
@@ -29,10 +28,10 @@
     margin-right: 70px;
     font-size: 25px;
     color: #fff;
-    width: 131px;
+    width: 180px;
     height: 45px;
     border-radius: 23px;
-    
+    text-transform: uppercase;
 }
 
 .bars {
@@ -273,9 +272,7 @@ scroll-snap-type: y mandatory;
   /* contact */
  .container4 {
   background-image: url(../img/bgkai.png);
-  max-width: 1500px;
   width: 100%;
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
