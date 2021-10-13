@@ -20,19 +20,20 @@
     width: 100%;
     justify-content: space-around;
     position: fixed;
-    background-color: burlywood;
+    background-color: #800000;
     opacity: 0.9;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .nav-list {
     margin-right: 70px;
     font-size: 25px;
-    color: #fff;
-    width: 180px;
-    height: 45px;
-    border-radius: 23px;
+    color: #deb887;
     text-transform: uppercase;
+}
+
+.nav-list:hover {
+  cursor: pointer;
 }
 
 .bars {
@@ -40,42 +41,51 @@
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
-    transform: translate(0%,-40%);
+    width: 120px;
+    height: auto;
+    transform: translate(0%,-43%);
     overflow: hidden;
 }
 
 /* Home */
 .container0 {
-  /* background-image: url(../img/house2.jpg); */
+  position: relative;
+  background-image: url(../img/house2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   height: 100vh;
   width: 100%;
-  animation: slide 30s infinite;
+  animation: aaa 30s infinite;
+  /* background-color: rebeccapurple; */
 }
 
-@keyframes slide {
+.section0-blur{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: black;
+  opacity: 0.4;
+}
+
+@keyframes aaa {
   20% {
-    background: url(/img/house2.jpg);
+    background-image: url(../img/vineyard1.jpg);
   }
   40% {
-    background: url(/img/house.jpg);
+    background-image: url(../img/house.jpg);
   }
   60% {
-    background: url(/img/vineyard6.jpg);
+    background-image: url(../img/vineyard6.jpg);
   }
   80% {
-    background: url(/img/vineyard1.jpg);
+    background-image: url(../img/vineyard1.jpg);
   }
   100% {
-    background: url(/img/vineyard1.jpg);
+    background-image: url(../img/house2.jpg);
   }
 }
 
@@ -85,15 +95,16 @@
   color: #fff;
   font-size: 25px;
   display: relative;
-  transform: translateY(-400px);
 }
 
 .h1text{
 /* font-family: 'Playfair Display', serif; */
 font-family: 'Cormorant Infant', serif;
-font-size: 80px;
+font-size: 6vh;
 text-align: center;
-
+line-height: 8vh;
+position: relative;
+z-index: 200;
 }
 
 /* 1st part */
@@ -107,9 +118,10 @@ text-align: center;
   flex-direction: column;
   height: 100vh;
   padding: 30px;
-  
+  /* animation: aaa 10s infinite; */
   
 }
+
 
 /* .slider {
   width: 800px;
@@ -349,7 +361,7 @@ text-align: center;
     max-width: 350px;
     width: 100%;
     height: 60px;
-    background-color: #5863F8;
+    background-color: #800000;
     color: #F2F2F2;
     margin-left: 16px;
     display: flex;
@@ -359,7 +371,7 @@ text-align: center;
 }
 
 .button:hover {
-  background-color: #473966;
+  background-color: #b45918;
   
 }
 
@@ -433,8 +445,3 @@ text-align: center;
   .mail {
     display: flex;
   }
-
-
-
-
-
