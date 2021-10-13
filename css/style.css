@@ -22,6 +22,7 @@
     position: fixed;
     background-color: burlywood;
     opacity: 0.9;
+    z-index: 1;
 }
 
 .nav-list {
@@ -47,7 +48,7 @@
 
 /* Home */
 .container0 {
-  background-image: url(../img/kaxeti.jpg);
+  /* background-image: url(../img/house2.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -56,17 +57,35 @@
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  padding: 30px;
-  
+  width: 100%;
+  animation: slide 30s infinite;
+}
+
+@keyframes slide {
+  20% {
+    background: url(/img/house2.jpg);
+  }
+  40% {
+    background: url(/img/house.jpg);
+  }
+  60% {
+    background: url(/img/vineyard6.jpg);
+  }
+  80% {
+    background: url(/img/vineyard1.jpg);
+  }
+  100% {
+    background: url(/img/vineyard1.jpg);
+  }
 }
 
 .h1 {
   margin: 0 auto;
-  margin-bottom: 30px;
   width: 35%;
   color: #fff;
   font-size: 25px;
-  
+  display: relative;
+  transform: translateY(-400px);
 }
 
 .h1text{
@@ -80,7 +99,7 @@ text-align: center;
 /* 1st part */
 
 .container1 {
-  background-image: url(../img/kaxeti-blur.jpg);
+  /* background-image: url(../img/kaxeti-blur.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -89,7 +108,15 @@ text-align: center;
   height: 100vh;
   padding: 30px;
   
+  
 }
+
+/* .slider {
+  width: 800px;
+  height: 400px;
+  
+} */
+
 
 .logokai {
   display: flex;
