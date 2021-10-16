@@ -1,0 +1,25 @@
+@media screen and (max-width: 1060px) {
+    .h1text {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .header-div, .nav-list {
+        width: 100%;
+        
+    }
+    .nav-list {
+        display: none;
+        
+    }
+    .logo, .bars {
+        display: block;
+        
+    }
+    .fas {
+
+    }
+
+}

@@ -300,13 +300,14 @@ li {
 
 .block {
     width: 370px;
-    height: 451px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     padding: 88px 21px 48px 21px;
+    margin-right: 20px;
   }
 
   .block:hover {
@@ -450,6 +451,7 @@ li {
     justify-content: center;
     align-items: center;
     text-align: center;
+  
 }
 
 .button:hover {
@@ -511,15 +513,6 @@ li {
 .end p:hover{
   border-top: 5px solid #deb887;
 }
-
-
-
-
-
-
-
-
-
 
 
 #portfolio {
