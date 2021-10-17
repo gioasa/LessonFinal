@@ -6,9 +6,18 @@
 }
 
 @media screen and (max-width: 800px) {
+    .header-div{
+        justify-content: flex-end;
+        padding: 20px 20px 20px 0px;
+    }
+    .nav{
+        margin-top: 0px;
+    }
+    .ul{
+        height: auto;
+    }
     .header-div, .nav-list {
         width: 100%;
-        
     }
     .nav-list {
         display: none;
