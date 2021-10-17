@@ -547,13 +547,17 @@ li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
+
 #portfolio .porfolio-main .portfolio-box {
   background-color: #000;
   position: relative;
+  
 }
 #portfolio .porfolio-main .portfolio-box:hover {
   background-color: #292929;
+  
 }
 #portfolio .porfolio-main .portfolio-box:hover .box-lower, #portfolio .porfolio-main .portfolio-box:hover .box-upper {
   opacity: 1;

@@ -18,8 +18,11 @@
         display: block;
         
     }
-    .fas {
-
+    .bars {
+        font-size: 30px;
+        color: #deb887;
+        
+        right: 0px;
     }
 
 }
