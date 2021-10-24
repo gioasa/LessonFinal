@@ -6,11 +6,22 @@
 /* navigation */
 .nav {
   margin-top: 20px;
+  text-align: center;
+  /* background-color: red; */
+  width: 100%;
+}
+.bars{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .ul {
     display: flex;
+    justify-content: space-around;
     height: 60px;
+    /* background-color: rebeccapurple; */
+    width: 70%;
+    margin: 0 auto;
     
 }
 
@@ -21,12 +32,14 @@
     justify-content: space-around;
     position: fixed;
     background-color: #800000;
+    /* background-color: yellow; */
     opacity: 0.9;
     z-index: 1000;
 }
 
 .nav-list {
-    margin-right: 70px;
+    /* background-color: teal; */
+    justify-content: space-around;
     font-size: 25px;
     color: #deb887;
     text-transform: uppercase;
