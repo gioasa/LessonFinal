@@ -8,11 +8,11 @@
 @media screen and (max-width: 800px) {
     .header-div{
         display: flex;
-        justify-content: flex-end;
-        padding: 20px 20px 20px 0px;
+        /* justify-content: flex-end; */
+        /* padding: 20px 20px 20px 0px; */
     }
     .ul{
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
     }
     .nav{
         margin-top: 0px;
@@ -27,15 +27,24 @@
         display: none;
         
     }
-    .logo, .bars {
+    /* .logo {
         display: block;
         
+    } */
+    .logo{
+        transform: none;
+        width: 80px;
+        transform: translateY(-6px);
+    }
+    .burger{
+        margin-right: 20px;
     }
     .bars {
         font-size: 30px;
         color: #deb887;
-        
-        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
 }
