@@ -27,15 +27,17 @@
         display: none;
         
     }
-    .logo, .bars {
+    .logo {
         display: block;
         
     }
+
     .bars {
         font-size: 30px;
         color: #deb887;
-        
+        display: flex;
         right: 0px;
+        
     }
 
 }

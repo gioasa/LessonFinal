@@ -303,7 +303,26 @@ li {
   height: 100vh;
 }
 
-.blog {
+.kaitext {
+  display: flex;
+  width: 700px;
+  background-color: tomato;
+  color: #fff;
+  flex-direction: column;
+  line-height: 1.8em;
+  background: #383333;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.kaitext1 {
+  margin-bottom: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+}
+
+
+/* .blog {
   display: flex;
   max-width: 1500px;
   width: 100%;
@@ -395,7 +414,7 @@ li {
 
   .html {
     scroll-behavior: smooth;
-  }
+  } */
 
 
   /* contact */
