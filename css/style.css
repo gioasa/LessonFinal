@@ -280,6 +280,23 @@ li {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.kaiwinery-lh1 {
+  display: flex;
+  width: 600px;
+  color: #fff;
+  flex-direction: column;
+  line-height: 2em;
+  background: #141313;
+  border-radius: 20px;
+  padding: 15px;
+  margin-right: 50px;
+
 }
 
 .wine1 {
@@ -296,137 +313,74 @@ li {
   margin: 0 auto;
 }
 
+.kaikisi {
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.kaiwine-text {
+  padding: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 10px;
+  
+}
 
 /* section 3 */
 .container2 {
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   height: 100vh;
+  
 }
 
-.kaitext {
+.kaiwinery-lh {
   display: flex;
-  width: 700px;
-  background-color: tomato;
+  width: 600px;
   color: #fff;
   flex-direction: column;
-  line-height: 1.8em;
-  background: #383333;
+  line-height: 2em;
+  background: #800000;
   border-radius: 20px;
-  padding: 8px;
+  padding: 15px;
+  margin-right: 50px;
+
 }
 
 .kaitext1 {
-  margin-bottom: 10px;
   font-family: 'Quicksand', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
+  padding: 10px;
 }
 
+.kaiwineryhead {
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
 
-/* .blog {
+.kaiwinery-rh {
+  width: 600px;
+}
+.kaiwineryph {
+  width: 500px;
+  height: auto;
+}
+
+.kaiwine-r {
   display: flex;
-  max-width: 1500px;
-  width: 100%;
   justify-content: center;
-  padding-top: 40px;
+ 
 }
-
-.block {
-    width: 370px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 88px 21px 48px 21px;
-    margin-right: 20px;
-  }
-
-  .block:hover {
-    border: 1px solid;
-    box-shadow: 4px 8px 10px #888888;
-    padding: 10px;
-  }
-
-
-  .div-text1 {
-    font-size: 22px;
-    color: #fff;
-    margin-bottom: 13px;
-  }
-  
-  .div-text2 {
-    font-size: 16px;
-    width: 328px;
-    color: gray;
-    margin-bottom: 5px;
-  }
-  
-  .div-text3 {
-    font-size: 16px;
-    width: 328px;
-    color: #fff;
-    margin-bottom: 30px;
-  }
-
-
-  .block:nth-child(1) {
-    background: linear-gradient(#fbba77, #dfa871);
-    margin-bottom: 60px;
-  }
-  
-  .block:nth-child(2) {
-    background: linear-gradient(#40e7e1, #2397b9);
-  }
-  
-  .block:nth-child(3) {
-    background: linear-gradient(#69529f, #473966);
-    margin-bottom: 60px;
-  }
-
-  
-.read {
-    width: 131px;
-    height: 45px;
-    border-radius: 23px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 11px;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-  }
-
-.read:hover {
-  background-color: #ffffff;
-  color: #4b647e;
-}
-
-  .image {
-      max-width: 80%;
-      height: auto;
-  }
-
-  .far {
-      margin-bottom: 30px;
-
-  }
-
-  .html {
-    scroll-behavior: smooth;
-  } */
-
 
   /* contact */
  .container4 {
-  background-image: url(../img/bgkai.png);
+  background-color: rgb(29, 29, 29);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -437,6 +391,10 @@ li {
   align-items: center;
   justify-content: space-between;
   
+ }
+
+ .lionlogo {
+   width: 300px;
  }
 
  .map {
@@ -499,10 +457,8 @@ li {
 }
 
 .far {
-  margin-left: 10px;
-  margin-top: 28px;
+  margin-left: 5px;
   font-size: 13px;
-
 }
 
 
