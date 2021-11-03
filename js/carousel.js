@@ -34,25 +34,33 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
-slider.addEventListener('mousedown', e => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener('mouseleave', _ => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', _ => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mousemove', e => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const SCROLL_SPEED = 3;
-  const walk = (x - startX) * SCROLL_SPEED;
-  slider.scrollLeft = scrollLeft - walk;
-});
+
+
+function goForward(){
+  imageCounter++
+  if(imageCounter===2){
+    imageCounter = 0
+  }
+  document.getElementById("image-front").src = imageArray[imageCounter].front
+  document.getElementById("image-back").src = imageArray[imageCounter].back
+}
+
+function goBackward(){
+  imageCounter--
+  if(imageCounter===-1){
+    imageCounter = 1
+  }
+document.getElementById("image-front").src = imageArray[imageCounter].front
+document.getElementById("image-back").src = imageArray[imageCounter].back
+}
+imageCounter = 0
+const imageArray = [
+  {
+    front:'./img/kisi.jpg',
+    back:'./img/kisi-back.jpg'},
+  {
+  front:'./img/saperavi.jpg',
+  back:'./img/saperavi-back.jpg'
+  }
+]
+

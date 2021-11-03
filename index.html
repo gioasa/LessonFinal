@@ -14,7 +14,7 @@
   <script type="text/javascript" src="slick/slick.min.js"></script> -->
   <script src="https://kit.fontawesome.com/1a849f7e50.js" crossorigin="anonymous"></script>
   <script src="./js/animate.js"></script>
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Winery</title>
 </head>
@@ -24,26 +24,26 @@
     <div class="header-div">
       <nav class="nav">
         <ul class="ul">
-          <a class="nav-text" onclick="scrol(1)">
+          <a class="nav-text" onclick="scrol('portfolio')">
             <li class="nav-list">Winery</li>
           </a>
-          <a class="nav-text" onclick="scrol(3)">
+          <a class="nav-text" onclick="scrol('section2')">
             <li class="nav-list">Products</li>
           </a>
-          <a onclick="scrol(0)">
+          <a onclick="scrol('section0')">
             <li class="nav-list"><img class="logo" src="img/lionbg.png" alt="logo"></li>
           </a>
-          <a class="nav-text" onclick="scrol(2)">
+          <a class="nav-text" onclick="scrol('about')">
             <li class="nav-list">About Us</li>
           </a>
-          <a class="nav-text" onclick="scrol(4)">
+          <a class="nav-text" onclick="scrol('footerenco')">
             <li class="nav-list">Contact</li>
           </a>
         </ul>
         <div>
         <div class="bars">
           <i></i>
-          <img onclick="scrol(0)" class="logo" src="img/lionbg.png" alt="logo">
+          <img onclick="scrol('section0')" class="logo" src="img/lionbg.png" alt="logo">
           <div id="giji" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -92,7 +92,7 @@
  
       </div>
       <div class="porfolio-main">
-          <div class="portfolio-box" style="background:url(img/venaxi.jpg)">
+          <div class="portfolio-box">
               <div class="box-upper">
               <div class="wre">
                   <img src="img/eye.svg" alt="">
@@ -176,7 +176,7 @@
                   <p>Lorem ipsum dolor sit amet</p>
               </div>
           </div>
-          <div class="portfolio-box">
+          <!-- <div class="portfolio-box">
               <div class="box-upper">
                   <div class="wre">
                       <img src="img/eye.svg" alt="">
@@ -189,25 +189,24 @@
                   <h5>A WORK OF PHOTOGRAPHY</h5>
                   <p>Lorem ipsum dolor sit amet</p>
               </div>
-          </div>
+          </div> -->
 
           
       </div>
   </section>
     <section id="section2">
       <div class="section2-front">
-        <img class="section2-img-front" src="img/kisi.jpg" alt="">
+        <img class="section2-img-front" id="image-front" src="img/kisi.jpg" alt="">
       </div>
       <div class="section2-back">
-        <img class="section2-img-back" src="img/kisi-back.jpg" alt="">
+        <img class="section2-img-back" id="image-back" src="img/kisi-back.jpg" alt="">
       </div>
 
-      <button id="btn1"></button>
-      <button id="btn2"></button>
-
+      <button id="btn1" onclick="goForward()"><i class="fas fa-angle-right"></i></button>
+      <button id="btn2" onclick="goBackward()"> <i class="fas fa-angle-left"></i></button>
     </section>
 
-    <section id="section3">
+    <section id="about" id="section3">
       <div class="container2">
         <div class="kaiwinery-lh">
           <p class="kaitext1"><span class="kaiwineryhead">KAI Winery</span>  - has been actively present on the Georgian wine market for already four years and is maintaining the path chosen towards individualism and quality.</p>
@@ -217,40 +216,11 @@
         <div class="kaiwinery-rh">
           <img class="kaiwineryph" src="img/kaiwineyard.png" alt="vineyard">
         </div>
-        <!-- <div class="blog">
-          <div class="block">
-            <i class="far fa-bell" style="font-size: 100px;"></i>
-            <p class="div-text1">KAI Winery - has been actively present on the Georgian wine market for already four years and is maintaining the path chosen towards individualism and quality.</p>
-            <p class="div-text2">Best Wine Makers in Georgia 2021</p>
-            <p class="div-text3">Solutions for Smart Home & Businesses</p>
-            <div class="read">
-              <p>Read More</p>
-            </div>
-          </div>
-          <div class="block">
-            <img class="image" src="img/health-benefits.jpg" alt="2" />
-            <p class="div-text1">Health Benefits of White Wine</p>
-            <p class="div-text2">June 10, 2021</p>
-            <p class="div-text3">Winemaking or vinification is the production of wine, starting with the selection of the fruit, its fermentation into alcohol, and the bottling of the finished</p>
-            <div class="read">
-              <p>Read More</p>
-            </div>
-          </div>
-          <div class="block">
-            <img class="image" src="img/awards.jpg" alt="3" />
-            <p class="div-text1">Annual Wine Awards 2021</p>
-            <p class="div-text2">June 10, 2021</p>
-            <p class="div-text3">Winemaking or vinification is the production of wine, starting with the selection of
-              the
-              fruit, its fermentation into alcohol, and the bottling of the finished</p>
-            <div class="read">
-              <p>Read More</p>
-            </div> -->
           </div>
     </section>
 
     <section>
-      <div class="container4">
+      <div  class="container4">
         <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47475.97241850706!2d45.837696!3d41.952002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4045db6446bf4a71%3A0x4e98ff012a347404!2sShilda%20Winery%20and%20Restaurant!5e0!3m2!1ska!2sge!4v1634021242415!5m2!1ska!2sge"
@@ -284,7 +254,7 @@
 
 
 <footer>
-  <div class="footer-main">
+  <div id="footerenco" class="footer-main">
       <div class="footer-flex">
       <img class="footer-image" src="./img/lionbg.png" alt="logo" width="50px">
       <p style="margin-right: 40px;">© Copyright 2021 - <span>Kai Winery</span>  - Site was designed by <span> Giorgi Asatiani.</span> </p>

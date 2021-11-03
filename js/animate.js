@@ -1,8 +1,6 @@
 function scrol (id){
-	const elemToScroll="container"+id
-	const elem=document.getElementsByClassName(elemToScroll)[0]
+	const elem=document.getElementById(id)
 	elem.scrollIntoView({ behavior: 'smooth' });
-	console.log(elem)
 	
 }
 

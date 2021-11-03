@@ -253,6 +253,38 @@ z-index: 200;
   font-family: 'Cormorant Infant', serif;
   color: #800000;
 }
+.porfolio-main .portfolio-box{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.porfolio-main .portfolio-box:nth-child(1){
+  background-image: url(../img/wine4.jpg);
+}
+.porfolio-main .portfolio-box:nth-child(2){
+  background-image: url(../img/venaxi.jpg);
+
+}
+.porfolio-main .portfolio-box:nth-child(3){
+  background-image: url(../img/wine3.jpg);
+}
+.porfolio-main .portfolio-box:nth-child(4){
+  background-image: url(../img/wine.jpg);
+}
+.porfolio-main .portfolio-box:nth-child(5){
+  background-image: url(../img/winesss.JPG);
+}
+.porfolio-main .portfolio-box:nth-child(6){
+  background-image: url(../img/bottle3.jpg);
+  grid-column: span 2;
+}
+.porfolio-main .portfolio-box:nth-child(7){
+  background-image: url(../img/venaxi.jpg);
+}
+
+
 
 #portfolio .portfolio-header {
   padding-bottom: 85px;
@@ -305,14 +337,14 @@ z-index: 200;
   width: 46px;
   height: 46px;
   background-color: transparent;
-  border: 2px solid green;
+  border: 2px solid #800000;
   border-radius: 50%;
 }
 #portfolio .porfolio-main .portfolio-box .box-upper .wre:first-of-type {
   transform: translateX(-11px);
 }
 #portfolio .porfolio-main .portfolio-box .box-upper .wre:hover {
-  background-color: green;
+  background-color: #800000;
 }
 #portfolio .porfolio-main .portfolio-box .box-lower {
   background-color: #000;
@@ -335,7 +367,7 @@ z-index: 200;
   font-weight: 600;
   font-style: italic;
   margin-bottom: 17.6px;
-  color: green;
+  color: #800000;
 }
 
 /* section2 */
@@ -613,6 +645,7 @@ footer{
   justify-content: center;
   margin-bottom: 400px;
   align-items: center;
+  position: relative;
 }
 .section2-back{
 height: 100%;
@@ -630,4 +663,25 @@ display: flex;
 }
 .section2-img-back{
 height: 100%;
+}
+#section2 button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 60px;
+  font-weight: bold;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+}
+
+#btn1{
+position: absolute;
+right: 20px;
+}
+#btn2{
+  position: absolute;
+  left: 20px;
 }
